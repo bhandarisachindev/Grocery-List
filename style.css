@@ -1,0 +1,41 @@
+body,html{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+@media (max-width:380px) {
+
+  *{
+    box-sizing: border-box;
+  }
+
+  .inside-main{
+    gap: 5px;
+    justify-content: space-around;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+  #grocery{
+    font-size: 1.2rem;
+  }
+  .main{
+    width: 360px;
+  }
+  #count{
+    width: 40px;
+  }
+
+  #plus,#minus{
+    width: 30px;
+    padding: 5px;
+  }
+  .inputItem{
+    gap: 10px;
+    
+  }
+}
