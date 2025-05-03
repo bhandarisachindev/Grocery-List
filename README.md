@@ -25,5 +25,5 @@ A simple, responsive, and functional Grocery List web application built using **
 ---
 
 ## 📸 Screenshot & Preview
-[Click here to preview the Music Player](https://grocery-list-one-lyart.vercel.app/)
+[Click here to preview Grocery List](https://grocery-list-one-lyart.vercel.app/)
 <img src="./asset/grocery.png" style="width: 100%"><img>
