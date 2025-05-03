@@ -9,10 +9,10 @@ const decrease  = document.querySelector("#minus");
 const place     = document.querySelector("#add");
 const addList   = document.querySelector(".list");
 const items     = document.querySelector("#items");
+const clearList = document.querySelector("#clearList");
 
 
-
-let delList = []; 
+let delList = [];   
 
 let countValue = 1;
 
@@ -100,8 +100,8 @@ function addItem(){
   <p class=" markBoxP text-[1.5rem] text-white">${items.value.trim()}  x${countValue}</p>
   </div>
   <i class=" delList fa-solid fa-trash rounded-[6px] p-[10px] text-red-700 bg-white"></i>`;
+
   reset();
-  
   addList.appendChild(ele);
 
   delList = [...document.getElementsByClassName("delList")];
@@ -109,13 +109,13 @@ function addItem(){
 }};
 
 
-function clearList(){
+clearList.addEventListener("click",()=>{
 
-}
-
-
-
-//
-//storage
-//
+  const userConfirmed = window.confirm("Are you sure you want to delete the entire list?");
+  
+  if (userConfirmed) {
+    addList.innerHTML="";
+    reset();
+  }
+});
 
